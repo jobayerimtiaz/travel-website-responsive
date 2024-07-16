@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+/* shared styles */
+
+.mulish-font {
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 .container {
     max-width: 1170px;
     margin: 40px auto;
-    border: 2px solid rebeccapurple;
+    /* border: 2px solid rebeccapurple; */
+}
+
+.btn-primary {
+    width: 174px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgb(255, 84, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    text-align: center;
 }
 
 /* header styles.............. */
@@ -25,12 +47,146 @@
     gap: 25px;
 }
 
-/*  {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-} */
+.menu-bar {
+    display: none;
+}
 
 .extra-design {
     color: rgb(255, 84, 0);
+}
+
+/* banner styles */
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url(../Images/travel-expore.png);
+    height: 500px;
+    margin-top: 30px;
+    border-radius: 16px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 106px; */
+}
+
+.banner-text h1 {
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.banner-text p {
+    width: 676px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+
+.banner-input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    width: 800px;
+    height: 84px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.travel-input {
+    width: 174px;
+    height: 48px;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    border: none;
+}
+
+.travel-input::placeholder {
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.travel-select {
+    width: 174px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 255, 255);
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.travel-select select {
+    margin-right: 80px;
+}
+
+.icon-btn {
+    margin-left: 8px;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 576px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-container {
+        width: 100%;
+    }
+
+    .banner-text h1 {
+        margin: 20px auto;
+        font-size: 22px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+        text-align: center;
+        width: 304px;
+
+    }
+
+    .banner-input {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 80%;
+        height: 100%;
+
+    }
+
+    .travel-input,
+    .travel-select,
+    .btn-primary {
+        width: 90%;
+        height: 48px;
+    }
 }
