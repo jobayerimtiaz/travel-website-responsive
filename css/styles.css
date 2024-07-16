@@ -1,5 +1,36 @@
 .container {
     max-width: 1170px;
-    margin: 0 auto;
+    margin: 40px auto;
     border: 2px solid rebeccapurple;
+}
+
+/* header styles.............. */
+
+/* nav styles */
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 201px;
+    height: 45px; */
+
+}
+
+.logo,
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+/*  {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+} */
+
+.extra-design {
+    color: rgb(255, 84, 0);
 }
