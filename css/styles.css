@@ -11,8 +11,8 @@
 
 .container {
     max-width: 1170px;
-    margin: 40px auto;
-    /* border: 2px solid rebeccapurple; */
+    margin: 100px auto;
+    border: 2px solid rebeccapurple;
 }
 
 .btn-primary {
@@ -140,6 +140,41 @@
     margin-left: 8px;
 }
 
+/* main styles.......... */
+
+/* popular tour section */
+
+.popular-tour {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px;
+}
+
+.popular-tour-text h2 {
+    color: rgb(19, 19, 24);
+    font-size: 2.5rem;
+    margin-top: 0px;
+    margin-bottom: 24px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.popular-tour-text p,
+li {
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 16px;
+    line-height: 26px;
+    text-align: left;
+}
+
+.popular-tour-text button {
+    margin-top: 32px;
+}
+
+
+
 /* responsive styles */
 
 @media screen and (max-width: 576px) {
@@ -189,4 +224,31 @@
         width: 90%;
         height: 48px;
     }
+
+    .banner-input {
+        margin-bottom: 32px;
+    }
+
+    .popular-tour {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .popular-tour-text p,
+    li {
+        width: 370px;
+    }
+
+    .btn-read-more {
+        width: 174px;
+        height: 52px;
+    }
+
+    .popular-tour-img img {
+        width: 100%;
+    }
+
+
+
+
 }
