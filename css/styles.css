@@ -138,6 +138,7 @@
 
 .icon-btn {
     margin-left: 8px;
+    font-family: Mulish;
 }
 
 /* main styles.......... */
@@ -230,7 +231,7 @@ li {
 
 .country-name {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
@@ -239,6 +240,98 @@ li {
     text-align: center;
 }
 
+/* why choose us section */
+
+.why-choose-us-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.why-choose-us-text h2 {
+    color: rgb(19, 19, 24);
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.why-choose-us-text p {
+    width: 643px;
+    height: 52px;
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+}
+
+.card-holder-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.card-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.cards {
+    width: 573px;
+    height: 284px;
+    padding: 32px 55px 32px 32px;
+}
+
+.cards h4 {
+    height: 30px;
+    color: rgb(19, 19, 24);
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: left;
+}
+
+.cards p {
+    width: 486px;
+    height: 78px;
+    color: rgb(90, 90, 93);
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-1 {
+    box-sizing: border-box;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    border-radius: 16px;
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.card-2 {
+    box-sizing: border-box;
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    border-radius: 16px;
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.card-3 {
+    box-sizing: border-box;
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    border-radius: 16px;
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.cards img {
+    width: 64px;
+    height: 64px;
+}
 
 
 
