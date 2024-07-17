@@ -12,7 +12,7 @@
 .container {
     max-width: 1170px;
     margin: 100px auto;
-    /* border: 2px solid rebeccapurple; */
+    border: 2px solid rebeccapurple;
 }
 
 .btn-primary {
@@ -333,7 +333,143 @@ li {
     height: 64px;
 }
 
+.new {
+    height: 800px;
+}
 
+/* deal and discount section */
+
+.deals-and-discount-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.deals-and-discount-text h2 {
+    color: rgb(19, 19, 24);
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.deals-and-discount-text p {
+    width: 643px;
+    height: 52px;
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.deals-and-discount-cards-holder {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.deals-and-discount-cards-1,
+.deals-and-discount-cards-3 {
+    width: 100%;
+    height: 500px;
+    border-radius: 1rem;
+    background: url(../Images/tour-package-1.png);
+}
+
+.deals-and-discount-cards-2 {
+    width: 100%;
+    height: 500px;
+    border-radius: 1rem;
+    background: url(../Images/tour-package-two.png);
+}
+
+.discount-info-1,
+.discount-info-2,
+.discount-info-3 {
+    display: flex;
+    width: 579px;
+    height: 389px;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    border: none;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.discount-info-1,
+.discount-info-3 {
+    margin-top: 55px;
+    margin-left: 535px;
+}
+
+.discount-info-2 {
+    margin-top: 55px;
+    margin-left: 55px;
+}
+
+.discount-info-text {
+    width: 452px;
+    height: 241px;
+    margin: 50px 77px 50px 50px;
+}
+
+.discount-info-text h4 {
+    color: rgb(19, 19, 24);
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: left;
+}
+
+.discount-info-text p {
+    color: rgb(90, 90, 93);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.price-tag {
+    color: rgb(255, 84, 0);
+    font-size: 1.25rem;
+    font-weight: 800;
+    text-align: left;
+}
+
+.btn-secondary {
+    width: 150px;
+    height: 52px;
+    border-radius: 0.5rem;
+    border: none;
+    background: rgb(255, 84, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hidden-para {
+    display: none;
+}
+
+.see-btn {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 1rem; */
+}
+
+.see-all-pack-btn {
+    width: 210px;
+    height: 52px;
+    margin-top: 10px;
+    border-radius: 0.5rem;
+    border: none;
+    background: rgb(255, 84, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+}
 
 /* responsive styles */
 
@@ -375,7 +511,6 @@ li {
         gap: 5px;
         width: 80%;
         height: 100%;
-
     }
 
     .travel-input,
@@ -428,7 +563,81 @@ li {
         height: 200px;
     }
 
+    .why-choose-us-text h2 {
+        width: 154px;
+        height: 25px;
+        font-size: 20px;
+    }
 
+    .why-choose-us-text p {
+        width: 309px;
+        height: 72px;
+        /* font-size: 20px; */
+    }
 
+    .cards {
+        width: 90%;
+        height: 289px;
+    }
+
+    .cards h4 {
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .cards p {
+        width: 271px;
+        height: 120px;
+        text-align: left;
+    }
+
+    .card-holder-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .deals-and-discount-text h2 {
+        font-size: 20px;
+    }
+
+    .deals-and-discount-text p {
+        font-size: 14px;
+        width: 309px;
+        height: 72px;
+    }
+
+    .deals-and-discount-cards-1,
+    .deals-and-discount-cards-2,
+    .deals-and-discount-cards-3 {
+        width: 410px;
+        height: 500px;
+    }
+
+    .discount-info-1,
+    .discount-info-2,
+    .discount-info-3 {
+        margin: 0 auto;
+        margin-top: 150px;
+        width: 350px;
+        height: 330px;
+    }
+
+    .discount-info-text {
+        margin-left: 20px;
+    }
+
+    .discount-info-text h4 {
+        margin-top: 10px;
+    }
+
+    .show-para {
+        display: none;
+    }
+
+    .hidden-para {
+        display: inline;
+    }
 
 }
